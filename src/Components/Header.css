@@ -1,0 +1,33 @@
+.nav-bar {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 2rem;
+    /* border-radius: 15%; */
+    cursor: pointer;
+}
+
+.nav-bar h1 {
+    font-size: 1.5rem;
+}
+
+.nav-bar h1:hover {
+    color: var(--accent-color);
+}
+
+.nav-bar ul {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 20px;
+    list-style: none;
+    padding: 10px 20px;
+}
+
+.nav-bar ul li a {
+    color: inherit;
+}
+
+.nav-bar ul li a:hover {
+    color: var(--accent-color);
+}

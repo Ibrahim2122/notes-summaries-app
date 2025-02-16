@@ -1,0 +1,85 @@
+/* Container */
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Page Title */
+.page-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0d9488;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Summary List Layout */
+.summary-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 auto;
+}
+
+/* Individual Summary Card */
+.summary-card {
+    background: var(--background-color);
+    padding: 0px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Summary Header */
+.summary-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+/* Summary Title */
+.summary-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0px;
+    color: var(--text-color);
+}
+
+/* Summary Date */
+.summary-date {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Summary Preview Text */
+.summary-preview {
+    font-size: 1rem;
+    color: #444;
+}
+
+/* View Summary Button */
+.summary-button {
+    background: var(--background-color);
+    border: none;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    color: var(--text-color);
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: .95rem;
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+    min-width: 140px;
+    max-width: 180px;
+    flex-shrink: 0;
+}
+
+.summary-button:hover {
+    background: #E2E8F0;
+}
