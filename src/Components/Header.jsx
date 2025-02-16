@@ -1,20 +1,23 @@
 import React from 'react'
 import "./Header.css";
+import { useNavigate } from 'react-router';
 
 function Header() {
+    const nav = useNavigate();
+
     return (
         <>
             <nav className='nav-bar'>
-                <h1>Note Summarizer</h1>
+                <h1 onClick={() => nav("/")}>Note Summarizer</h1>
                 <ul>
                     <li>
-                        <a href="">Home</a>
+                        <a onClick={() => nav("/")}>Home</a>
                     </li>
                     <li>
-                        <a href="">Upload</a>
+                        <a onClick={() => nav("/upload")}>Upload</a>
                     </li>
                     <li>
-                        <a href="">View Summary</a>
+                        <a onClick={() => nav("/summaries")}>View Summary</a>
                     </li>
                 </ul>
             </nav>

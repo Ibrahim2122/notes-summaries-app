@@ -10,9 +10,10 @@ function App() {
   return (
     <>
       <Header />
-      {/* <Main /> */}
-      {/* <Upload /> */}
+      <Main />
+      <Upload />
       <Summaries />
+      
     </>
   )
 }

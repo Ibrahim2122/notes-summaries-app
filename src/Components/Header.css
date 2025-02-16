@@ -9,7 +9,7 @@
 }
 
 .nav-bar h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .nav-bar h1:hover {
@@ -21,7 +21,7 @@
     /* justify-content: space-between; */
     gap: 20px;
     list-style: none;
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
 }
 
 .nav-bar ul li a {

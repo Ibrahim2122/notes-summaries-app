@@ -20,7 +20,7 @@
 input,
 textarea,
 .file-input-wrapper,
-button {
+.submit-btn {
     width: 100%;
     box-sizing: border-box;
 }
