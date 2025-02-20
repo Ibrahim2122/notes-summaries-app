@@ -1,65 +1,82 @@
-/* Container */
+/* Main Container */
 .container {
-    width: 100%;
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 32px 16px;
+}
+
+/* Preview Mode Banner */
+.preview-banner {
+    background-color: #fef3c7;
+    /* Yellow background */
+    border-left: 4px solid #f59e0b;
+    /* Left border */
+    color: #92400e;
+    /* Text color */
+    padding: 16px;
+    margin-bottom: 24px;
+}
+
+.exit-preview {
+    text-decoration: underline;
+    color: #92400e;
+}
+
+.exit-preview:hover {
+    color: #78350f;
 }
 
 /* Page Title */
 .page-title {
-    font-size: 2.5rem;
+    font-size: 32px;
     font-weight: bold;
     color: #0d9488;
+    /* Teal color */
+    margin-bottom: 32px;
     text-align: center;
-    margin-bottom: 30px;
 }
 
-/* Summary List Layout */
+/* Summary List (Grid) */
 .summary-list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    display: grid;
+    gap: 24px;
+    max-width: 768px;
     margin: 0 auto;
 }
 
-/* Individual Summary Card */
+/* Summary Card */
 .summary-card {
-    background: var(--background-color);
-    padding: 0px 20px;
+    padding: 24px;
     border-radius: 8px;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    background-color: white;
 }
 
 /* Summary Header */
 .summary-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 100%;
+    align-items: flex-start;
+    margin-bottom: 16px;
 }
-
 
 /* Summary Title */
 .summary-title {
-    font-size: 1.2rem;
+    font-size: 20px;
     font-weight: 600;
-    margin-bottom: 0px;
+    margin-bottom: 4px;
     color: var(--text-color);
 }
 
 /* Summary Date */
 .summary-date {
-    font-size: 0.9rem;
-    color: #666;
+    font-size: 14px;
+    color: #6b7280;
 }
 
 /* Summary Preview Text */
 .summary-preview {
-    font-size: 1rem;
-    color: #444;
+    color: #4b5563;
 }
 
 /* View Summary Button */
@@ -82,4 +99,121 @@
 
 .summary-button:hover {
     background: #E2E8F0;
+}
+
+/* No Summaries Container */
+.no-summaries-container {
+    text-align: center;
+    padding: 48px 0;
+    background-color: #f9fafb;
+    border-radius: 8px;
+}
+
+/* File Icon */
+.file-icon {
+    display: block;
+    margin: 0 auto;
+    height: 48px;
+    width: 48px;
+    color: #0d9488;
+    margin-bottom: 16px;
+}
+
+/* No Summaries Text */
+.no-summaries {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 8px;
+}
+
+.no-summaries-text {
+    color: #4b5563;
+    margin-bottom: 24px;
+}
+
+/* Upload Notes Button */
+.upload-link {
+    display: inline-flex;
+    align-items: center;
+    background-color: #0d9488;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.upload-link:hover {
+    background-color: #0f766e;
+}
+
+/* Plus Icon */
+.upload-link .plus-icon {
+    margin-right: 8px;
+    height: 16px;
+    width: 16px;
+}
+
+/* DELETE BUTTON */
+.delete-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #6b7280;
+    /* Gray */
+    transition: color 0.2s ease-in-out;
+}
+
+.delete-btn:hover {
+    color: #dc2626;
+    /* Red */
+}
+
+.loading,
+.error {
+    text-align: center;
+    font-size: 1.25rem;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+}
+
+.loading {
+    color: #0d9488;
+    /* Teal color */
+    background-color: #ccfbf1;
+    /* Light teal background */
+    border: 1px solid #5eead4;
+    /* Teal border */
+}
+
+.error {
+    color: #dc2626;
+    /* Red color */
+    background-color: #fee2e2;
+    /* Light red background */
+    border: 1px solid #fca5a5;
+    /* Red border */
+}
+
+/* Add a subtle animation to the loading text */
+@keyframes pulse {
+    0% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}
+
+.loading {
+    animation: pulse 1.5s infinite;
 }
