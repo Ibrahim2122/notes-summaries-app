@@ -10,9 +10,6 @@
 ✅ **Responsive UI** built with **React.js**  
 ✅ **Seamless API Communication** with Flask backend  
 
-## 🖼️ UI Preview  
-_(You can add screenshots here for a better visual representation)_
-
 ## 🛠️ Tech Stack  
 - **React.js** - Frontend framework  
 - **CSS** - Styling  
